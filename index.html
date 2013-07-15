@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UIE Puzzle</title>
+
+<link href='css/styles.css' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+	
+	<div class="calendar">
+		
+		<div class="legend">
+			<ul>
+				<li>9:00 am</li>
+				<li>9:30 am</li>
+				<li>10:00 am</li>
+				<li>10:30 am</li>
+				<li>11:00 am</li>
+				<li>11:30 am</li>
+				<li>12:00 pm</li>
+				<li>12:30 pm</li>
+				<li>1:00 pm</li>
+				<li>1:30 pm</li>
+				<li>2:00 pm</li>
+				<li>2:30 pm</li>
+				<li>3:00 pm</li>
+				<li>3:30 pm</li>
+				<li>4:00 pm</li>
+				<li>4:30 pm</li>
+				<li>5:00 pm</li>
+				<li>5:30 pm</li>
+				<li>6:00 pm</li>
+				<li>6:30 pm</li>
+				<li>7:00 pm</li>
+				<li>7:30 pm</li>
+				<li>8:00 pm</li>
+				<li>8:30 pm</li>
+				<li>9:00 pm</li>
+			</ul>
+		</div>
+		
+		<div class="events" id="events">
+		
+		
+		</div>
+				
+	</div>
+	
+	<script src="js/event.js"></script>
+	<script src="js/eventMgr.js"></script>
+	
+	<script>
+	
+		var eventMgr = new EventManager();
+		
+		function layOutDay( events )
+		{
+			// Load the events
+			eventMgr.loadEvents( events );
+		
+			// Render the events
+			eventMgr.renderEvents();
+		}	
+		
+		// Onload
+		window.onload = function(){
+			
+			var day1 = [
+				{id : 1, start : 30, end : 150},
+				{id : 2, start : 540, end : 600},
+				{id : 3, start : 560, end : 620},
+				{id : 4, start : 610, end : 670}
+			]
+			
+			var day2 = [
+				{id : 1, start : 30, end : 70}, 
+				{id : 2, start : 40, end : 90}, 
+				{id : 3, start : 50, end : 250},
+				{id : 4, start : 80, end : 120},
+				{id : 5, start : 100, end : 180},
+				{id : 6, start : 130, end : 210},
+				{id : 7, start : 190, end : 260},
+				{id : 8, start : 215, end : 280}
+			]
+			
+			layOutDay( day1 );
+
+		};
+	</script>
+	
+</body>
+</html>

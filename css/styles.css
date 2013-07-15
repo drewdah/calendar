@@ -1,0 +1,103 @@
+/** YUI Reset */
+html{color:#000;background:#FFF;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:text-top;}sub{vertical-align:text-bottom;}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;}input,textarea,select{*font-size:100%;}legend{color:#000;}
+
+/** Calendar */
+.calendar {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 750px;
+	
+	width: 805px;
+	
+	font-family: Arial;
+	font-size: 12px;
+	color: #686868;
+}
+
+/** Legend */
+.legend {
+	margin-top: 15px;
+	
+	float: left;
+	height: 720px;
+	width: 76px;
+	background-color: #ffffff;	
+}
+
+.legend li
+{
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	
+	text-align: right;
+	padding-right: 10px;
+}
+
+.legend li:nth-child(even)
+{
+	font-size: 10px;	
+	font-weight: normal;
+}
+
+/** Events */
+.events {
+	margin-top: 30px;
+	
+	float: left;	
+	height: 720px;
+	width: 600px;
+	
+	padding: 0px 10px;
+	
+	background-color: #ececec;
+}
+
+/** Event */
+.event {
+	position: absolute;
+	float: left;
+	font-size: 10px;
+	
+	width: 100%;
+	
+	min-height: 15px;
+	max-width: 600px;
+	
+	overflow: hidden;
+}
+
+.event .content {
+	
+	height: 100%;
+	width: auto;
+	
+	background-color: #fff;
+	border-left: 4px solid #4b6ea9;
+	border-top: 1px solid #d5d5d5;
+}
+
+.event .title {
+	margin: 0px 8px;
+	font-size: 12px;
+	font-weight: bold;
+	color: #4b6ea9;
+	clear: both;
+}
+
+.event  .location {
+	margin: 0px 9px;
+	font-size: 8px;
+}
+
+/** Short duration events */
+.event.single .title {
+	float: left;
+	line-height: 15px;
+}
+
+.event.single .location {
+	float: left;
+	line-height: 15px;
+}
